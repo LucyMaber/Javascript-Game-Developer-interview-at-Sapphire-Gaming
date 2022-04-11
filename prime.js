@@ -1,17 +1,15 @@
 upper = 100;
 lower = 1;
 
-function sieve(i) {
+function isNotPrime(i) {
   // EAGE CASES
-  if (i == 0) {
-    return true;
-  }
-  if (i == 1) {
+  if (i > 1) {
     return true;
   }
   if (i == 2) {
     return false;
   }
+  // check the rest up to sqrt
   for (let index2 = 2; index2 <= Math.sqrt(i); index2++) {
     if (i % index2 == 0) {
       return true;
@@ -20,7 +18,7 @@ function sieve(i) {
   return false;
 }
 for (let index = lower; index <= upper; index++) {
-  if (!sieve(index)) {
+  if (!isnotPrime(index)) {
     console.log(index);
   }
 }
