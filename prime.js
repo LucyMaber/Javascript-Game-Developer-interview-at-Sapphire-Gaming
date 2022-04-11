@@ -17,6 +17,7 @@ function isNotPrime(i) {
   }
   return false;
 }
+
 for (let index = lower; index <= upper; index++) {
   if (!isnotPrime(index)) {
     console.log(index);
